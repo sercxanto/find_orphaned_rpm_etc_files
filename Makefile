@@ -6,7 +6,7 @@
 # Build the package / call rpm
 rpm: 
 	cp -f find_orphaned_rpm_etc_files ~/rpm/SOURCES
-	cp -f gpl-2.0.txt README ~/rpm/BUILD
+	cp -f AUTHORS COPYING README ~/rpm/BUILD
 	rpmbuild -ba find_orphaned_rpm_etc_files.spec
 
 # GPG sign the package

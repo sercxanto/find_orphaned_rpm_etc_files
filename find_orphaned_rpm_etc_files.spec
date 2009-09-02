@@ -1,7 +1,7 @@
 Name: find_orphaned_rpm_etc_files
 Summary: Finds orphaned rpm files under /etc
 Version: 0.2
-Release: 1
+Release: 2
 License: GPL
 Group: Utilities/System
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root-%(%{__id_u} -n)
@@ -19,5 +19,5 @@ mkdir -p $RPM_BUILD_ROOT/etc/cron.daily
 install -m 755 $RPM_SOURCE_DIR/find_orphaned_rpm_etc_files $RPM_BUILD_ROOT/etc/cron.daily/find_orphaned_rpm_etc_files
 
 %files
-%doc gpl-2.0.txt README
+%doc AUTHORS COPYING README
 /etc/cron.daily/find_orphaned_rpm_etc_files
